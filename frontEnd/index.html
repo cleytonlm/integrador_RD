@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="titulo" >
+            <h1>ADMINISTRATIVO</h1>
+        </div>
+    </header>
+    
+    
+ 
+<form method="post">
+
+<!-- CADASTRO DE PRODUTOS-->
+<fieldset>
+ <legend id="produtos" ><b> Cadastro De Produtos</b></legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label id="produto" for="produto">Produto: </label>
+   </td>
+   <td>
+    <input type="text" name="nome">
+   </td>
+  <tr>
+   <td>
+    <label id="validade" >Validade: </label>
+   </td>
+   <td>
+       <input type="date" size="4">
+       <!---
+    <input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+   -->
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="codigo" for="codigo">Codigo: </label>
+   </td>
+   <td>
+    <input type="number" name="codigo" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="ean" >EAN:</label>
+   </td>
+   <td>
+    <input type="number" name="ean" size="20" maxlength="20">
+   </td>
+  </tr>
+  <tr>
+    <td>
+     <label id="valor">Valor:</label>
+    </td>
+    <td>
+     <input type="number" name="valor" size="20" maxlength="20">
+    </td>
+   </tr>
+ </table>
+
+ <input type="submit">
+<input type="reset" value="Limpar">
+
+</fieldset>
+
+<br />
+<!--  CADASTRO DE FORNECEDORES -->
+<fieldset>
+ <legend id="fornecedores" ><b>Cadastro De Fornecedores</b> </legend>
+ <table cellspacing="10">
+
+    <tr>
+        <td>
+         <label id="empresa" for="empresa">Empresa: </label>
+        </td>
+        <td>
+         <input type="text" name="empresa">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label id="cnpj" for="cnpj">CNPJ: </label>
+        </td>
+        <td>
+         <input type="number" name="cnpj">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label id="telefone" for="telefone">Telefone: </label>
+        </td>
+        <td>
+         <input type="tel" name="telefone">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label id="email" for="email">E-mail: </label>
+        </td>
+        <td>
+         <input type="text" name="email">
+        </td>
+       </tr>
+      
+  <tr>
+   <td>
+    <label id="rua" for="rua">Rua:</label>
+   </td>
+   <td>
+    <input type="text" name="rua">
+   </td>
+  </tr>
+  <tr>
+  <td>
+    <label id="numero" for="numero">Numero:</label>
+   </td>
+   <td>
+    <input type="number" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="bairro" for="bairro">Bairro: </label>
+   </td>
+   <td>
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="estado" for="estado">Estado:</label>
+   </td>
+   <td>
+
+    <select name="estado">
+    <option value="" disabled selected>Estado</option>     
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="cidade" for="cidade">Cidade: </label>
+   </td>
+   <td>
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="cep" for="cep">CEP: </label>
+   </td>
+   <td>
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+
+ <input type="submit">
+<input type="reset" value="Limpar">
+
+</fieldset>
+<br />
+
+<!-- CONSULTA -->
+<fieldset>
+ <legend id="consulta"> <b>Consulta De Dados </b> </legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label id="usuario" for="usuario">Usuário: </label>
+   </td>
+   <td>
+    <input type="search" name="usuario" placeholder="Nome De Usuário">
+   </td>
+  </tr>
+
+  <tr>
+   <td>
+    <label id="produto" for="produto">Produto: </label>
+   </td>
+   <td>
+    <input type="search" name="produto" placeholder="Nome Do Produto">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label id="fornecedor" for="fornecedor" >Fornecedor: </label>
+   </td>
+   <td>
+    <input type="search" name="fornecedor" placeholder="Nome Da Empresa">
+   </td>
+  </tr>
+
+
+ </table>
+
+ 
+
+</fieldset>
+<br />
+
+</form>
+
+<footer class = "rodape">
+    OME|DIREITOS <br>
+     Copyright ©2000 - 2020 www.ome.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as
+     fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, trade dress, aqui veiculados
+     são de propriedade exclusiva da OME.COM Internet S.A. É vedada qualquer reprodução, total ou parcial, de
+     qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará
+     na responsabilização cível e criminal nos termos da Lei. OME.Com Internet S/A - CNPJ: 00.309.000/0001-16 Rua
+     Vergueiro, 943 - Capão Redondo - CEP01504-001 - São Paulo - SP - A inclusão no carrinho não garante o preço e/ou a
+     disponibilidade do produto. Caso os produtos apresentem divergências de valores, o preço válido é o exibido na
+     tela de pagamento. Vendas sujeitas a análise e disponibilidade de estoque.
+ </footer>
+
+</body>
+
+
+</html>
