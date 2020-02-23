@@ -2,9 +2,12 @@ package com.backend.IntegradorRD.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -32,6 +35,10 @@ public class Cliente {
 	
 	@Column(nullable = false, name = "senha")
 	private String senha;
+	
+	@OneToOne(targetEntity=Endereco.class, fetch=FetchType.EAGER)
+    @JoinColumn(name="id_endereco")
+	private Endereco endereco;
 
 	public Long getId() {
 		return id;
@@ -71,5 +78,13 @@ public class Cliente {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}	
 }
