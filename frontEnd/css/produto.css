@@ -1,0 +1,29 @@
+.nome-produto{
+    font-weight: bolder;
+    font-size: 33px;
+    color:
+    #2a2a2e;
+}
+.descricao-produto{
+    color: gray;
+}
+.preco-produto{
+    color: #3A4276;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.produto{
+    padding: 20px;
+}
+.adicionar-produto{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-compra{
+    height: 70vh;
+}
+.icone-compra-produto{
+    width: 200px;
+}

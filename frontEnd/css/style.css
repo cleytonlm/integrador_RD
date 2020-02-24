@@ -1,87 +1,11 @@
+@import './header.css';
+@import './pagina-produtos.css';
+@import './produto.css';
+
 body {
     background-color: #f5f5f5;
     overflow-x: hidden;
 }
-
-.bg-main {
-    background-color: #2E91E6;
-}
-
-.navbar {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.logo {
-    width: 130px;
-    height: 62px;
-    background-image: url('../images/logo.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.login-icon {
-    font-size: 40px;
-    padding-top: 7px;
-    color: #fff;
-}
-
-.shopping-icon {
-    font-size: 40px;
-    color: #fff;
-}
-
-.logged {
-    cursor: pointer;
-}
-
-.logged:active {
-    outline: none;
-}
-
-.navbar-icon {
-    width: 30px;
-}
-
-.navbar-span {
-    color: #2A2A2E;
-    font-size: 15px;
-}
-
-#ola-navbar {
-    font-size: 12px;
-    font-weight: bolder;
-    color: #fff;
-}
-
-#usuario-navbar {
-    color: #fff;
-
-}
-
-#qtd-produto {
-    color: #2E91E6;
-    z-index: 99999;
-    position: relative;
-    left: -27px;
-    top: -2px;
-    font-weight: bolder;
-}
-
-#div-header-separation {
-    margin-left: 15px;
-    position: relative;
-    top: 8px;
-    margin-right: 25px;
-}
-
-.sub-navbar {
-    margin-bottom: 20px !important;
-    background-color: #fff;
-
-}
-
 
 
 .carousel {
